@@ -1,0 +1,28 @@
+@forward "utilities";
+@forward "pages";
+@forward "layouts";
+@forward "components";
+
+body {
+  background-color: rgba(242, 242, 242, 1);
+  min-height: 100dvh;
+
+  &:has(.profile) {
+    background: url("/cover.jpg") no-repeat, rgba(242, 242, 242, 1);
+    background-size: 100dvw clamp(220px, 40vw, 300px), 100%;
+  }
+}
+
+main {
+  padding: 1rem;
+
+  @media (min-width: 600px) {
+    padding-inline: 0;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

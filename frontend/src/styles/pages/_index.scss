@@ -1,0 +1,12 @@
+@forward "profile";
+@forward "profileEdit";
+
+.posts {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 65px;
+
+  @media (min-width: 600px) {
+    margin-bottom: 1.5rem;
+  }
+}
